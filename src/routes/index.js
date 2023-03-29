@@ -18,6 +18,8 @@ router.get("/notes/:idOwner", notesControllers.getNotes)
 
 router.delete("/notes/:_id", notesControllers.deleteNote)
 
+router.put("/notes/:_id", notesControllers.updateNote)
+
 // USERS
 router.post("/users", (req, res) => {
     const user = userSchema(req.body);
